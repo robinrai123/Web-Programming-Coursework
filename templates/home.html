@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Hotel Booking</title>
+
+    <link type="text/css" rel="stylesheet" href="/static/styles/homestyle.css">
+    <script src="/static/homescript.js">
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div id="headerText">
+            <a id="homeLink" href="/">Magical Hotel!</a>
+        </div>
+    </header>
+
+    <div id="wrapper">
+
+        <div id="gallery">
+            <input id="leftButton" class="galleryButtons" type="image" src="/static/leftarrow1.png" onclick="imgUpdateBack()" alt="Left Button Pic">
+
+            <img id="housePic" src="/static/1.jpg" alt="some house" />
+
+            <input id="rightButton" class="galleryButtons" type="image" src="/static/rightarrow1.png" onclick="imgUpdateForward()" alt="Right Button Pic">
+        </div>
+        <div id="mainWrapper">
+            <div id="main1" class="mains">
+
+                <div>
+
+                    <p></p>
+                </div>
+
+                <h2>
+
+                    Welcome
+                </h2>
+
+                <p>
+                    Welcome to our website for our property, called the Magical Hotel. Here you can check out information about and around our high quality establishment.
+                </p>
+
+                <h2>
+                    Features
+                </h2>
+
+                <p>
+                    Our propery features many many basic necessities, such as:
+                </p>
+
+                <ul class="bullet">
+                    <li> A toilet </li>
+                    <li> Two beds </li>
+                    <li> An oven and microwave </li>
+                    <li> A dishwasher and washing machine </li>
+                    <li> A nice patio </li>
+                </ul>
+
+                <h2>
+                    Extra features
+                </h2>
+
+                <p>
+                    Some more features that are, quite frankly, exquisite:
+                </p>
+
+                <ul class="bullet">
+                    <li> An en suite </li>
+                    <li> A burgular alarm </li>
+                    <li> Memory foam matresses </li>
+                    <li> More tea than bricks </li>
+                </ul>
+
+                <h2 id="contact">
+                    Contact Information
+                </h2>
+
+                <p>
+                    If you want to contact us for more information such as booking information and other queries:
+                </p>
+
+                <ul class="bullet">
+                    <li> Phone number: 0769690420 </li>
+                    <li> Email: magicalhotel@gmail.com </li>
+                </ul>
+                <iframe id="embeddedYoutube" src="https://www.youtube.com/embed/jnLSYfObARA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="main2" class="mains">
+                <div class="linkButtonDiv" id="booklink">
+                    <a class="linkButton" href="book">Book Now</a>
+                </div>
+
+                <h2>Check out some of these reviews</h2>
+                <table>
+                    {%for line in reviewsListLimited %}
+                    {%for item in line%}
+                    <tr>
+                        <td>{{item}}</td>
+                    </tr>
+                    {% endfor %}
+                    {% endfor %}
+                </table>
+                <div class="linkButtonDiv" id="reviewLink">
+                    <a class="linkButton" href="reviews">Reviews Page</a>
+                </div>
+            </div>
+
+            <div id="main3" class="mains">
+
+                <iframe id="embeddedMap" src="https://www.google.com/maps/d/embed?mid=1NjSsP3x8eO90h6kWEWmw8LpiyUkI8k59&hl=en" width="640" height="480"></iframe>
+
+                <h2>
+                    Location information and local attractions
+                </h2>
+                <p>
+                    Being situated by a river, the location we're based in features many attractions, such as:
+                </p>
+                <ul class="bullet">
+                    <li> Watery water park <br> Known for it's strangely "watery" water, it serves for a great place to have a relaxing day out. Only a five minunte walk.</li>
+                    <li> Nation national park <br>A great place to take a jolly long and sophisticated walk. Only a ten minute walk to get to it, which is negligible, since you're gonna want to go there to walk after all. </li>
+                    <li> Ocean cinema hall <br>If you want to watch a banging film, like "The great misadventures of the Programming 1 coursework: OMDB.java", it's only a five minute drive. </li>
+                </ul>
+                <p>
+                    The property is located just off of Wensum Valley, which is only five minutes away from both a train and bus station.
+                </p>
+                <br>
+
+                <div class="linkButtonDiv" id="attractionLink">
+                    <a class="linkButton" href="attractions">Attractions</a>
+                </div>
+            </div>
+
+            <footer>
+                <p id="footerText">
+                    Last updated on :
+                    <br> 04/12/2018
+                </p>
+
+                <iframe id="embeddedFacebook" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+                <form class="adminFooter" action="admin" method="post">
+                    <input type="text" name="adminLogin" placeholder="Admin Login">
+                    <input type="text" name="adminPass" placeholder="Admin Password">
+                    <input type="submit" value="Log in">
+                </form>
+
+                <p class="adminFooter" id="failMessage">{{failMessage}}</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

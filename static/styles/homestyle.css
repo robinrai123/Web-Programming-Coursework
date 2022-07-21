@@ -1,0 +1,258 @@
+Header {
+    background-color: darkorange;
+    position: relative;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-width: 80rem;
+    max-width: 100%;
+    filter: drop-shadow(0 0 0.4rem black);
+}
+
+div#headerText {
+    width: 13rem;
+    margin: auto;
+}
+
+#homeLink {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0);
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(229,229,229,1);
+    max-width: 100%;
+    min-height: 40rem;
+}
+
+div#wrapper {
+    min-width: 80rem;
+    max-width: 100%;
+}
+
+div#gallery {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 40rem;
+    width: 80rem;
+    filter: drop-shadow(0 0 0.4rem black);
+}
+
+    div#gallery:hover {
+    }
+
+#housePic {
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.galleryButtons {
+    background-color: darkorange;
+    text-decoration: none;
+    padding-top: 19rem;
+    padding-bottom: 18.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    width: 3%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+    .galleryButtons:hover {
+        background-color: orangered;
+    }
+
+#leftButton {
+}
+
+#rightButton {
+}
+
+div#mainWrapper {
+    min-width: 80rem;
+}
+
+.mains {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 8rem;
+    margin-top: 1.5rem;
+    width: 31.33333%;
+    filter: drop-shadow(0 0 0.4rem black);
+    background-color: rgba(255,255,255,1);
+    max-height: 69rem;
+}
+
+div#main1 {
+    float: left;
+    margin-left: 1.5%;
+}
+
+#embeddedYoutube {
+    width: 90%;
+    height: 18rem;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1rem;
+    border-width: 0px;
+}
+
+div#main2 {
+    float: left;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+div#main3 {
+    float: right;
+    margin-right: 1.5%;
+    padding-top: 0;
+}
+
+#embeddedMap {
+    width: 100%;
+    max-height: 80rem;
+    border: 0px;
+}
+
+.linkButton {
+    padding: 1.5rem;
+    padding-left: 25%;
+    padding-right: 25%;
+    background-color: orange;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    filter: drop-shadow(0 0 0.2rem black);
+    margin: auto;
+    display: block;
+    border-radius: 0.3rem;
+    font-style: italic;
+}
+
+    .linkButton:hover {
+        background-color: orangered;
+    }
+
+.linkButtonDiv {
+    width: 80%;
+    margin: auto;
+}
+
+div#attractionLink {
+    margin-top: 2rem;
+}
+
+div#booklink {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+div#reviewLink {
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: large;
+    color: darkorange;
+    font-style: italic;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 0;
+    font-size: 1rem;
+}
+
+a {
+    background-color: yellow;
+    color: darkorange;
+}
+
+table {
+    padding: 1rem;
+}
+
+tr, td {
+    padding: 0.35rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+li {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.2rem;
+}
+
+ul.bullet {
+    margin: 0;
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 2rem;
+}
+
+footer {
+    text-align: left;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: 80rem;
+    background-color: lightblue;
+    filter: drop-shadow(0 0 0.4rem black);
+    margin-bottom: 0;
+}
+
+.adminFooter {
+    width: 27rem;
+    float: right;
+    padding-bottom: 0.2rem;
+    padding-top: 1rem;
+}
+
+#failMessage {
+    color: red;
+    font-size: medium;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+#footerText {
+    width: 30%;
+    float: left;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+#embeddedFacebook {
+    width: 25%;
+    padding-bottom: 0rem;
+    padding-top: 1rem;
+    margin: 0;
+    height: 3em;
+}

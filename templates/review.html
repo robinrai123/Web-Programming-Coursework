@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+    <title> Reviews Page </title>
+    <link type="text/css" rel="stylesheet" href="/static/styles/reviewstyle.css">
+</head>
+<body>
+    <header>
+        <div id="headerText">
+            <a id="homeLink" href="/">Magical Hotel!</a>
+        </div>
+    </header>
+    <div id="bookingDivWrapper">
+        <div id="bookingPage">
+            <h2>Give this property a review!</h2>
+            <form action="review" id="userform" method="post">
+                <p class="formtitle">
+                    Name:
+                </p>
+                <input type="text" name="name" placeholder="Name" maxlength="50" />
+            </form>
+            <p class="formtitle">
+
+                Comment:
+            </p>
+
+            <textarea name="comment" form="userform" placeholder="Comment" maxlength="250"></textarea>
+            <br />
+            <input type="submit" value="Submit review" form="userform" />
+            <p id="failMessage">{{failMessage}}</p>
+            <p id="confirmMessage">{{confirmMessage}}</p>
+            <table>
+                {%for line in reviewsList %}
+                {%for item in line%}
+                <tr>
+                    <td>{{item}}</td>
+                </tr>
+                {% endfor %}
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</body>
+</html>

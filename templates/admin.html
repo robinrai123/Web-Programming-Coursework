@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+    <title> Admin Page </title>
+    <link type="text/css" rel="stylesheet" href="/static/styles/bookstyle.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerText">
+            <a id="homeLink" href="/">Magical Hotel!</a>
+        </div>
+    </header>
+    <div id="bookingDivWrapper">
+        <div id="bookingPage">
+            <h2> Admin Page </h2>
+
+            <table>
+                {%for line in bookList %}
+                <tr>
+                    {%for item in line%}
+                    <td>
+                        {{item}}
+                    </td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</body>
+</html>

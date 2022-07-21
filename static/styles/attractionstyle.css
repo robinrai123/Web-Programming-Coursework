@@ -1,0 +1,116 @@
+Header {
+    background-color: darkorange;
+    position: relative;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-width: 80rem;
+    max-width: 100%;
+    filter: drop-shadow(0 0 0.4rem black);
+}
+
+div#headerText {
+    width: 13rem;
+    margin: auto;
+}
+
+#homeLink {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0);
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(229,229,229,1);
+}
+
+div#wrapper {
+    min-width: 80rem;
+    max-width: 100%;
+}
+
+div#wrapper {
+    min-width: 80rem;
+    max-width: 100%;
+}
+
+div#mainWrapper {
+    min-width: 80rem;
+}
+
+div#gallery {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 40rem;
+    width: 80rem;
+    filter: drop-shadow(0 0 0.4rem black);
+}
+
+    div#gallery:hover {
+    }
+
+#housePic {
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.galleryButtons {
+    background-color: darkorange;
+    text-decoration: none;
+    padding-top: 19rem;
+    padding-bottom: 18.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    width: 3%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+    .galleryButtons:hover {
+        background-color: orangered;
+    }
+
+#leftButton {
+}
+
+#rightButton {
+}
+
+div#text {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    display: block;
+    width: 70rem;
+    filter: drop-shadow(0 0 0.4rem black);
+    background-color: rgba(255,255,255,1);
+    padding: 2rem;
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: large;
+    color: darkorange;
+    font-style: italic;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: small;
+}
+
+a {
+    color: white;
+}

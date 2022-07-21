@@ -1,0 +1,130 @@
+Header {
+    background-color: darkorange;
+    position: relative;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-width: 80rem;
+    max-width: 100%;
+    filter: drop-shadow(0 0 0.4rem black);
+}
+
+div#headerText {
+    width: 13rem;
+    margin: auto;
+}
+
+#homeLink {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0);
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: italic;
+}
+
+div#bookingPage {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    display: block;
+    min-width: 76rem;
+    max-width: 76rem;
+    filter: drop-shadow(0 0 0.4rem black);
+    background-color: rgba(255,255,255,1);
+    padding: 2rem;
+}
+
+div#bookingDivWrapper {
+}
+
+#failMessage {
+    color: red;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#confirmMessage {
+    color: blue;
+    font-size: medium;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(229,229,229,1);
+}
+
+div#wrapper {
+    min-width: 80rem;
+    max-width: 100%;
+}
+
+div#mainWrapper {
+    min-width: 80rem;
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: large;
+    color: darkorange;
+    font-style: italic;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: small;
+}
+
+a {
+    color: darkorange;
+}
+
+input {
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: small;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+tr, td {
+    padding: 0.35rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: medium;
+}
+
+.formtitle {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: medium;
+}
+
+ul.bullet {
+    margin: 0;
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 2rem;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightblue;
+    filter: drop-shadow(0 0 0.4rem black);
+}
